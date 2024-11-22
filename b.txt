@@ -1,0 +1,63 @@
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~$ cd Desktop/cherrypick
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick$ cd che4rrypick
+bash: cd: che4rrypick: No such file or directory
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick$ cd cherrypick
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ ls
+a.txt  README.md
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ git checkout -b feature-branch
+M	README.md
+M	a.txt
+Switched to a new branch 'feature-branch'
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ git log feature-branch
+commit c32efb7c1f8486b1ccaefaaee819aec97b5275a0 (HEAD -> feature-branch, origin/main, origin/HEAD, main)
+Author: Akhila <https://github.com/Akhila-c-star/4AD23CI057repo.git>
+Date:   Fri Nov 22 15:04:13 2024 +0530
+
+    initial commit
+
+commit 9195566d09eb700c8c5309057e92a8c8b982dda4
+Author: Farisgit21hub <dmmgtccnt@gmail.com>
+Date:   Fri Nov 22 14:51:06 2024 +0530
+
+    Initial commit
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ git checkout feature-branch
+M	README.md
+M	a.txt
+Already on 'feature-branch'
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ echo "hjhgjkga" >b.txt
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ ls
+a.txt  b.txt  README.md
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ ls
+a.txt  b.txt  README.md
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ gedit b.txt
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ git commit -am "new" 
+[feature-branch 5e7af05] new
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ mode change 100644 => 100755 README.md
+ mode change 100644 => 100755 a.txt
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ git log feature branch
+fatal: ambiguous argument 'feature': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+(base) student@atme-HP-280-Pro-G6-Microtower-PC:~/Desktop/cherrypick/cherrypick$ git log feature-branch
+commit 5e7af0522eba394a3eea9bc853779b866a3b3a1e (feature-branch)
+Author: Akhila <https://github.com/Akhila-c-star/4AD23CI057repo.git>
+Date:   Fri Nov 22 15:28:10 2024 +0530
+
+    new
+
+commit c32efb7c1f8486b1ccaefaaee819aec97b5275a0 (HEAD -> main, origin/main, origin/HEAD)
+Author: Akhila <https://github.com/Akhila-c-star/4AD23CI057repo.git>
+Date:   Fri Nov 22 15:04:13 2024 +0530
+
+    initial commit
+
+commit 9195566d09eb700c8c5309057e92a8c8b982dda4
+Author: Farisgit21hub <dmmgtccnt@gmail.com>
+Date:   Fri Nov 22 14:51:06 2024 +0530
+
+    Initial commit
+
